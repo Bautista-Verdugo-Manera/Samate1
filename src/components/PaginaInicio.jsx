@@ -25,7 +25,7 @@ function PaginaInicio() {
   }, [categoriaSeleccionada]);
 
   const productosDefault = [
-    { nombre: 'Mate Camionero de Algarrobo', precio: 12000, imagen: '/public/img/Mate-Camionero1.png', categoria: 'Mates', subcategoria: 'Camionero', descripcion: 'Mate tradicional de madera de algarrobo, resistente y con diseño clásico.' },
+    { nombre: 'Mate Camionero de Algarrobo', precio: 12000, imagen: 'https://carnesargentinas.es/wp-content/uploads/2022/02/Trucos-esenciales-para-preparar-el-mate-1200x900.jpg', categoria: 'Mates', subcategoria: 'Camionero', descripcion: 'Mate tradicional de madera de algarrobo, resistente y con diseño clásico.' },
     { nombre: 'Mate Camionero de Cuero y Acero', precio: 27000, imagen: '/img/Mate-Camionero.png', categoria: 'Mates', subcategoria: 'Camionero', descripcion: 'Mate con recubrimiento de cuero y acero inoxidable, ideal para uso diario.' },
     { nombre: 'Mate de Imperial Virola Lisa', precio: 29000, imagen: '/img/Mate-Imperial1.png', categoria: 'Mates', subcategoria: 'Imperial', descripcion: 'Elegante mate imperial con virola lisa, diseño fino y durable.' },
     { nombre: 'Mate Torpedo de Cuero y Acero', precio: 27000, imagen: '/img/Mate-Torpedo.png', categoria: 'Mates', subcategoria: 'Torpedo', descripcion: 'Mate estilo torpedo con detalles en cuero y acero, moderno y cómodo.' },
