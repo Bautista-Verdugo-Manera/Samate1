@@ -1,0 +1,26 @@
+/* Elimina márgenes y paddings por defecto del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegura que el body ocupe todo el ancho y altura */
+body, html {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fffaf5; /* fondo suave opcional */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor principal de la página */
+.pagina {
+  width: 100%;              /* Ocupa todo el ancho */
+  height: 100%;             /* Ocupa toda la altura de la pantalla */
+  display: flex;            /* Usamos flexbox */
+  flex-direction: column;   /* Para que los elementos se apilen de arriba hacia abajo */
+  align-items: center;      /* Centra los elementos en el eje horizontal */
+  justify-content: flex-start; /* Alinea todo desde arriba */
+  padding: 1rem;
+  box-sizing: border-box;
+}

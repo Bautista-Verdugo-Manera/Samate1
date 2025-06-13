@@ -1,0 +1,112 @@
+.header {
+  width: 100%;
+  background-color: #00796b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.izquierda,
+.derecha {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.titulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+.menu-button,
+.carrito-button {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover,
+.carrito-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.buscador-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.lupa {
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: white;
+}
+
+.buscador-container input.buscador {
+  width: 0;
+  opacity: 0;
+  padding: 4px 8px;
+  margin-left: 6px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  background-color: white;
+  color: black;
+}
+
+.buscador-container.expandido input.buscador {
+  width: 140px;
+  opacity: 1;
+}
+
+/* En pantallas pequeñas: apila elementos y quita absolute */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.8rem 1rem;
+  }
+
+  .izquierda,
+  .derecha {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .titulo {
+    position: static;
+    transform: none;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .menu-button,
+  .carrito-button {
+    font-size: 1.2rem;
+  }
+}

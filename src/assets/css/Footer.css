@@ -1,0 +1,113 @@
+/* Estilo general del footer */
+footer {
+  background-color: #1a1a2e; /* Fondo oscuro elegante */
+  color: #fff; /* Texto blanco */
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Contenedor principal: grid responsive */
+footer > div:first-child {
+  max-width: 96rem; /* ancho máximo */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  footer > div:first-child {
+    grid-template-columns: repeat(3, 1fr); /* tres columnas en desktop */
+  }
+}
+
+/* Títulos de secciones */
+footer h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.3s ease;
+  cursor: default;
+}
+
+footer h2:hover {
+  border-color: #e94560; /* color acento al pasar mouse */
+}
+
+/* Párrafo descriptivo */
+footer p {
+  font-size: 0.875rem;
+  color: #9ca3af; /* gris claro */
+}
+
+/* Lista de enlaces */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  color: #d1d5db;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Redes sociales: flex con espacio */
+footer > div:first-child > div:last-child > div {
+  display: flex;
+  gap: 1rem;
+}
+
+footer > div:first-child > div:last-child > div a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem; /* un poco más grande para los iconos */
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Removemos el color general para hover */
+footer > div:first-child > div:last-child > div a:hover {
+  color: inherit;
+}
+
+/* Colores específicos para cada red social al pasar el mouse */
+footer > div:first-child > div:last-child > div a[aria-label="Instagram"]:hover {
+  color: #E1306C; /* rosa Instagram */
+}
+
+footer > div:first-child > div:last-child > div a[aria-label="Facebook"]:hover {
+  color: #1877F2; /* azul Facebook */
+}
+
+footer > div:first-child > div:last-child > div a[aria-label="WhatsApp"]:hover {
+  color: #25D366; /* verde WhatsApp */
+}
+
+footer > div:first-child > div:last-child > div a[aria-label="TikTok"]:hover {
+  color: #69C9D0; /* azul TikTok */
+}
+
+/* Línea inferior con créditos */
+footer > div:last-child {
+  margin-top: 2rem;
+  border-top: 1px solid #374151;
+  padding-top: 1rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}

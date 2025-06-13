@@ -1,0 +1,276 @@
+.checkout-container {
+  max-width: 520px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgb(0 0 0 / 0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.checkout-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: #333;
+  letter-spacing: 1.7px;
+  font-size: 2rem;
+}
+
+/* --- RESUMEN --- */
+.resumen-compra {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.resumen-compra h2 {
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.resumen-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.resumen-total {
+  text-align: right;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+/* --- FORMULARIO --- */
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.metodo-label {
+  margin-bottom: 15px;
+}
+
+/* --- METODOS PAGO EN CARDS --- */
+
+.metodos-pago-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.card-pago {
+  flex: 1;
+  cursor: pointer;
+  background: #f9f9f9;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 22px 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.06);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  user-select: none;
+}
+
+.card-pago:hover {
+  background: #e8e3ff;
+  box-shadow: 0 10px 20px rgb(123 97 255 / 0.3);
+}
+
+.card-pago input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.card-pago .card-content {
+  flex-grow: 1;
+}
+
+.card-pago h3 {
+  margin: 0 0 8px;
+  color: #87986a;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.card-pago p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.card-selected {
+  border-color: #87986a;
+  background: #d9d5ff;
+  box-shadow: 0 12px 30px rgba(238, 238, 238, 0.5);
+  transform: scale(1.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- CAMPOS TRANSFERENCIA --- */
+.transferencia-datos {
+  background: #f5f5ff;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  padding: 18px 22px;
+  box-shadow: inset 0 0 12px #aaa4ff55;
+}
+
+.transferencia-datos h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #87986a;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #4a4a6a;
+}
+
+input[type="text"] {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.8px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.25s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #87986a;
+  outline: none;
+  box-shadow: 0 0 8px #6b7e54;
+}
+
+/* --- BOTON CONFIRMAR --- */
+.btn-confirmar {
+  background-color: #87986a;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 14px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn-confirmar:hover {
+  background-color: #6b7e54;
+}
+
+/* --- MENSAJE CONFIRMACION --- */
+.confirmacion-mensaje {
+  margin-top: 30px;
+  background-color: #e4ffe4;
+  border: 1.8px solid #5cb85c;
+  color: #3a6b3a;
+  padding: 16px 22px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.ticket-final {
+  background-color: #fdf6ee;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.ticket-detalle ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.ticket-detalle li {
+  margin: 6px 0;
+}
+
+.ticket-transferencia {
+  margin-top: 20px;
+  background-color: #fff5e1;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.btn-seguir-comprando {
+  margin-top: 20px;
+  background-color: #5c4d2d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.ticket-detalle h3 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btn-volver {
+  background: #7c6a46;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem auto; /* centra horizontalmente */
+  display: block;    /* necesario para que 'margin: auto' funcione */
+  padding: 10;        /* corregir el padding inválido */
+  text-align: center;
+  text-decoration: black;
+}
+
+
+.btn-volver:hover {
+  text-decoration: underline;
+}
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 16px;
+  margin-top: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebd5a;
+}

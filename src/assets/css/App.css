@@ -1,0 +1,85 @@
+.header {
+  width: 100%;                    /* Ocupa todo el ancho */
+  background-color: #dcd5ba;
+  color: #3e2e1e;
+  display: flex;                  /* Usamos flexbox para organizar los elementos dentro del header */
+  justify-content: space-between; /* Espacio entre el título y los botones */
+  align-items: center;            /* Alinea los elementos verticalmente */
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+.header-botones {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.menu-btn, .carrito-btn {
+  background-color: white;
+  color: #ac7446;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-btn:hover, .carrito-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.carrito-btn {
+  background-color: white;
+  color: #ac7446;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carrito-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.carrito {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 1rem auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+/* Hace que la página use todo el ancho y alto sin márgenes */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fffaf5; /* fondo suave opcional */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor principal */
+.pagina {
+  width: 100%;
+  max-width: 1200px; /* opcional: limita el ancho máximo en pantallas muy grandes */
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.logo {
+  width: 80px;     /* ancho máximo del logo */
+  height: auto;     /* altura automática proporcional */
+  display: block;   /* evita comportamientos raros */
+  margin: 20px auto; /* centrado */
+}
+
+
